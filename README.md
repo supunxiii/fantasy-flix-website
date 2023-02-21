@@ -4,3 +4,4 @@ designed & developed by: supun seth xiii, shuaib feroze, kishoritha suthagar, th
 in 2021 April.
 "Buy Products Page" and "Presentation Page" were developed by supun seth xiii.
 live at: https://supunxiii.github.io/fantasy-flix-website/PresentationPage.html
+this website is not mobile responsive.

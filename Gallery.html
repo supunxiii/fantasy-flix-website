@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ExternalStyleSheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Gallery</title>
+        
+<style>
+    html {
+      box-sizing: border-box;
+    }
+    .Bodyclass {
+      margin-top: 4cm;
+    }
+    .logo {
+      padding-top: 70px;
+      height: 260px;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;            
+    }
+    .cascading {
+      margin-left: 27cm;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    #background, #textcolor {
+      border-radius: 2px;
+      width: 5cm;
+      height: 0.5cm;
+    }
+    .column {
+      float: left;
+      width: 6.5cm;
+      margin-bottom: 16px;
+      padding: 0 8px;
+      margin-left: 0.9cm;
+    }
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+    .image {
+      box-shadow: 10px 10px 5px black;
+      height: 17cm;
+      width: 6.5cm;
+      background-color:white;
+    }
+
+    .box {
+      background-color:white;
+      margin-top: -10.7cm;
+      margin-left: 18cm;
+      width: 15cm;
+      height: 10cm;
+    }
+    .title {
+      padding: 0 16px;
+    }
+    .title::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    .button:hover {
+      background-color: #555;
+    }
+    #overlay1, #overlay2, #overlay3, #overlay4, #overlay5{
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 4;
+      cursor: pointer;
+    }
+    .pageeditor {
+      color: white;
+      padding-left: 19cm;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="web_name">
+    <img class="logo" src="finalogo.png" alt="finalogo">
+</h1>
+
+
+<div class="navbar">
+    <a href="main.html" class="new">HOME</a>
+    <a href="Gallery.html">GALLERY</a>
+    <a href="Quiz.html">QUIZ</a>
+    <a href="BuyProductsPage.html">BUY</a>
+    <a href="QueryForm.html">CONTACT</a>
+
+
+    <div class="nav search">
+        <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" class="searchbar" placeholder="Search..." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>
+
+
+<div class="Bodyclass">
+    <h1 style="text-align: center;font-size: 60px;color:whitesmoke;font-family: Georgia, 'Times New Roman', Times, serif;text-shadow:5px 5px black;">GALLERY</h1>
+    <p style="text-align: center;font-size: 30px;font-family: Georgia, 'Times New Roman', Times, serif ">Click on View More >>> to see the whole Description of the Images !!! </p>
+
+
+    <form>
+      <div class="cascading">
+        <b style="color: white;font-size: 17px;">BACKGROUND COLOR:</b>
+            <select id="background" onchange="updateBackgroundColour(this)">
+                <option value="#778899">Light grey</option>
+                <option value="#3CB371">MediumSeaGreen</option>
+                <option value="#5F9EA0">CadetBlue</option>
+                <option value="#F08080">LightCoral</option>
+            </select>
+      </div>
+    </form>
+
+
+  <script>
+    function updateBackgroundColour(selectElem) {
+      var i = selectElem.selectedIndex; // Get the selected option's index.
+      if (i < 0) {
+          return; // Nothing is selected.
+      }
+      // Set the background-color CSS attribute of the <body> element to 
+      // the value attribute of the selected option in our <select> element.
+      document.body.style.backgroundColor = selectElem.options[i].value;}
+  </script>
+
+
+  <form>
+    <div class="cascading">
+      <b style="color: white;font-size: 17px;">TEXT-COLOR:</b>
+          <select id="backGround"  onChange="updateTextColour(this.value)">
+              <option value="000000">Black</option>
+              <option value="00CED1">Teal</option>
+              <option value="DAA520">Yellow</option>
+              <option value="228B22">Green</option>
+              <option value="191970">Blue</option>
+              <option value="ff0000">Red</option>
+          </select>
+    </div>
+  </form>
+
+  <script>
+    function updateTextColour(value) {
+      document.body.style.color = '#' + value;
+    }
+  </script>
+
+  <hr> 
+  <br>
+
+
+  <div class="row">
+      <div class="column">
+          <div class="image">
+              <img src="Blackwidow1.jpg" alt="Blackwidow" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+                  <div class="title">
+                      <h2>Black Widow </h2>
+                      <p class="subheading">Genre: Action, Adventure, Sci-Fic</p>
+                      <p>Release: 2021</p>
+                      <p>IMDb: 7.0</p>
+                      <p>Director: Cate Shortland </p>
+                      <p>Country: United States</p>
+                          <div id="overlay1" onclick="bw0()">
+                              <img src="Blackwidow1.jpg" class="over_image" alt="blackwidow" style="width: 8cm; height: 10cm; margin-left: 10cm; margin-top: 6cm;border-style: solid;border-width: thick;">
+                                  <div class="box">
+                                    <h2 style="margin-left: 6px;font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;"><b>Black Widow</b></h2>
+                                    <i>Genre: Action, Adventure, Sci-Fic</i>
+                                    <p>Natasha Romanoff, aka Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy, and the broken relationships left in her wake long before she became an Avenger.</p>
+                                    <p><b>Release:</b>2021</p>
+                                    <p><b>IMDb:</b> 7.0</p>
+                                    <p><b>Director:</b> Cate Shortland </p>
+                                    <p><b>Country:</b> United States</p>
+                                    <p><b>Actors:</b> Dale Liner, Yasmin Riley, Shaina West, Edward L....</p>
+                                  </div>
+                          </div>
+                          <input type="radio" id="blackwidow" name="blackwidow" value="ViewMore1" onclick="bw1()">
+                          <label for="blackwidow" > <b> View More >>> </b></label>
+                          
+                  </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="image">
+              <img src="Thetomorrowwar.jpg" alt="The tomorrow war" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+                  <div class="title">
+                      <h2>The Tomorrow War</h2>
+                      <p class="subheading">Genre: Action, Adventure, Sci-Fic</p>
+                      <p>Release: 2021</p>
+                      <p>IMDb: 7.0</p>
+                      <p>Director: Chris McKay </p>
+                          <div id="overlay2" onclick="ttw0()">
+                              <img src="Thetomorrowwar.jpg" class="over_image" alt="The tomorrow war" style="width: 8cm; height: 10cm; margin-left: 10cm; margin-top: 6cm;border-style: solid;border-width: thick;">
+                                <div class="box">
+                                    <h2 style="margin-left: 6px;font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;"><b>The Tomorrow War</b></h2>
+                                    <i>Genre: Action, Adventure, Sci-Fic</i>
+                                    <p>The world is stunned when a group of time travellers arrive from the year 2051 to deliver an urgent message: thirty years in the future, mankind is losing a global war against a deadly alien species.</p>
+                                    <p><b>Release: </b>2021</p>
+                                    <p><b>IMDb: </b>7.0</p>
+                                    <p><b>Director: </b>Chris Mckay </p>
+                                    <p><b>Country: </b>United States</p>
+                                    <p><b>Actors: </b>Chris Patt, Yvonne Strahovski, J.K. Simmons...</p>
+                                </div>
+                          </div>
+                          <input type="radio" id="thetomorrowwarr" name="the tomorrow war" value="ViewMore2" onclick="ttw1()">
+                          <label for="thetomorrowwarr" ><b>View More >>> </b></label>
+                          
+                  </div>
+          </div>
+      </div>
+  
+      <div class="column">
+          <div class="image">
+              <img src="luca.jpeg" alt="Luca" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+                  <div class="title">
+                      <h2>Luca</h2>
+                      <p class="subheading">Genre: Comedy, Adventure, Fantasy, Family, Animation</p>
+                      <p>Release: 2021</p>
+                      <p>IMDb: 8.3</p>
+                      <p>Director: Enrico Casarosa </p>
+                      <p>Country: United States</p>
+                          <div id="overlay3" onclick="l0()">
+                              <img src="luca.jpeg" class="over_image" alt= "Luca" style="width: 8cm; height: 10cm; margin-left: 10cm; margin-top: 6cm;border-style: solid;border-width: thick;">
+                                  <div class="box">
+                                      <h2 style="margin-left: 6px;font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;"><b>Luca</b></h2>
+                                      <i>Genre: Comedy, Adventure, Fantasy, Family, Animation</i>
+                                      <p>Set in a beautiful seaside town on the Italian Riviera, the original animated feature is a coming-of-age story about one young boy experiencing an unforgettable summer filled with gelato, pasta and endless scooter rides. Luca shares these adventures with his newfound best friend, but all the fun is threatened by a deeply-held secret: he is a sea monster from another world just below the water's surface.</p>
+                                      <p><b>Release: </b> 2021</p>
+                                      <p><b>IMDb: </b>8.3</p>
+                                      <p><b>Director:</b> Enrico Casarosa </p>
+                                      <p><b>Country: </b> United States</p>
+                                      <p><b>Actors: </b> Marina Massironi, Sandy Martin, Sacha Baron Cohen, Maya Radolph......</p>
+                                  </div>
+                          </div>
+                          <input type="radio" id="Luca" name="Luca" value="ViewMore3" onclick="l1()">
+                          <label for="Luca" ><b> View More >>> </b></label>
+                          
+                  </div>
+            </div>
+      </div>
+
+      <div class="column">
+          <div class="image">
+              <img src="FearStreet1.jpg" alt="Fear Street Part 1 " style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+                  <div class="title">
+                      <h2>Fear Street Part one 1994 </h2>
+                      <p class="subheading">Genre: Horror, Mystery</p>
+                      <p>Release: 2021</p>
+                      <p>IMDb: 7.0</p>
+                      <p>Director: Leigh Janiak </p>
+                      <p>Country: United States</p>
+                          <div id="overlay4" onclick="f0()">
+                              <img src="FearStreet1.jpg" class="over_image" alt="Fear Street Part 1" style="width: 8cm; height: 10cm; margin-left: 10cm; margin-top: 6cm;border-style: solid;border-width: thick;">
+                                  <div class="box">
+                                      <h2 style="margin-left: 6px;font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;"><b>Fear Street Part One 1994</b></h2>
+                                      <i>Genre: Horror, Mystery</i>
+                                      <p>After a series of brutal slayings, a teen and her friends take on an evil force that's plagued their notorious town for centuries.</p>
+                                      <p><b>Release: </b> 2021</p>
+                                      <p><b>IMDb: </b>7.0</p>
+                                      <p><b>Director:</b> Leigh Janiak </p>
+                                      <p><b>Country: </b>United States</p>
+                                      <p><b>Actors: </b>Kiana Madeira, Olivia Scott Welch, Benjamin Flores Jr</p>
+                                  </div>
+                          </div>
+                          <input type="radio" id="FearStreet1" name="Fear Street 1" value="ViewMore4" onclick="f1()">
+                          <label for="FearStreet1" > <b>View More >>></b></label>    
+                  </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="image" >
+              <img src="Conjuring3.jpg" alt="Conjuring 3" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+                  <div class="title">
+                      <h2>Conjuring 3 </h2>
+                      <p class="subheading">Genre: Horror, Thriller, Mystery</p>
+                      <p>Release: 2021</p>
+                      <p>IMDb: 7.0</p>
+                      <p>Director: Michael Chaves </p>
+                      <p>Country: United Kingdom</p>
+                          <div id="overlay5" onclick="c0()">
+                              <img src="Conjuring3.jpg" class="over_image" alt="Conjuring 3" style="width: 8cm; height: 10cm; margin-left: 10cm; margin-top: 6cm;border-style: solid;border-width: thick;">
+                                  <div class="box">
+                                      <h2 style="margin-left: 6px;font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif;"><b>Conjuring 3</b></h2>
+                                      <i>Genre: Horror, Thriller, Mystery</i>
+                                      <p>Paranormal investigators Ed and Lorraine Warren take on one of the most sensational cases of their careers after a cop stumbles upon a dazed and bloodied young man walking down the road. Accused of murder, the suspect claims demonic possession as his defense, forcing the Warrens into a supernatural inquiry unlike anything they've ever seen before.</p>
+                                      <p><b>Release:</b> 2021</p>
+                                      <p><b>IMDb: </b> 7.0</p>
+                                      <p><b>Director: </b>Michael Chaves </p>
+                                      <p><b>Country: </b>United Kingdom</p>
+                                      <p><b>Actors: </b> Franco Castan, Ingrid Bisu, Engenie Bondurant, James William Ballard, Sterling Jerins</p>
+                                  </div>
+                          </div>
+                          <input type="radio" id="Conjuring3" name="conjuring 3 " value="ViewMore5" onclick="c1()">
+                          <label for="Conjuring3" ><b>View More >>> </b></label>
+                          
+                  </div>
+          </div>
+      </div>
+
+  
+
+      <script>
+          function bw1() {
+          document.getElementById("overlay1").style.display = "block";
+          }
+
+          function bw0() {
+          document.getElementById("overlay1").style.display = "none";
+          }
+
+
+          function ttw1() {
+          document.getElementById("overlay2").style.display = "block";
+          }
+
+          function ttw0() {
+          document.getElementById("overlay2").style.display = "none";
+          }
+
+
+          function l1() {
+          document.getElementById("overlay3").style.display = "block";
+          }
+
+          function l0() {
+          document.getElementById("overlay3").style.display = "none";
+          }
+          
+
+          function f1() {
+          document.getElementById("overlay4").style.display = "block";
+          }
+
+          function f0() {
+          document.getElementById("overlay4").style.display = "none";
+          }
+          
+
+          function c1() {
+          document.getElementById("overlay5").style.display = "block";
+          }
+
+          function c0() {
+          document.getElementById("overlay5").style.display = "none";
+          }
+
+      </script>
+
+  </div>
+</div>
+
+
+<br>
+<hr>
+<a href="draft.html" class="pageeditor">Page Developer</a>
+ <br>
+ <br>
+ 
+<div class="end">
+    <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+    <a href="https://lk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+    <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram" target="_blank"></a>
+  
+    <h1 style="color:white; text-align: center; margin-top: -0.5cm;">Subscribe</h1>
+    <p style="color:white; text-align: center;">Subscribe to Website mailing list to receive updates.</p>
+ 
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Enter Email Address ....." name="search2">
+        <button type="submit">Subscribe</button>
+    </form>
+
+  <br>
+
+    <a href="main.html" target="_blank" style="margin-left: 17.4cm; color: blue;">Home</a> <br>
+    <a href="#sitemap" target="_blank" style="margin-left: 17.3cm; color: blue;">Sitemap</a><br>
+    <a href="QueryForm.html" target="_blank" style="margin-left: 17.3cm; color: blue;">Contact</a>
+
+    <p style="color: white; margin-top: 1cm; text-align: center;">
+
+      <u>This website uses cookies</u><br>
+                Our website and our third party partners use cookies and related technologies to improve and customize the browsing experience for optimized ad delivery, social media  engagement <br> 
+                and analytics. By clicking 'I Agree' below, you consent to our use of cookies. You may disable cookies in your browser settings at any time. For more information, please see our <a href="#">Privacy Policy.</a></p>
+      <br>
+      <hr>
+  <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Terms and Conditions    |    Privacy Policy    |    Accessibility Statement    |    Transparency in Supply Chains Act</p>
+  <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Supplier Code of Conduct    |    Marketing to Children    |    Do Not Sell My Information    |</p>
+  <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Copyright &#169; 2021 Fantasy<i>Flix</i></p>
+</div>
+</body>
+</html>

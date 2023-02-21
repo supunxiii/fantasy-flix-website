@@ -1,0 +1,125 @@
+.box {
+  position: sticky;
+  border: solid;
+  border-color: aliceblue;
+  border-radius: 15px;
+  margin-left: 50px;
+  width: 500px;
+  margin-bottom: 60px;
+  background-color: #000d1a;
+}
+.box:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image {
+  border: solid;
+  margin-left: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+  float: left;
+  border-radius: 10px;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.kishoritha {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.text p {
+  font-size: 30px;
+}
+body {
+  background-color: #34495e;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.box1,
+.box3 {
+  margin-left: 300px;
+}
+.Supun {
+  margin-top: 38px;
+}
+.kishoritha {
+  height: 400px;
+  width: 350px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 15px;
+}
+.title {
+  border: solid;
+  border-color: aliceblue;
+  background-color: #000d1a;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 200px;
+}
+h1 {
+  color: aliceblue;
+}
+.backtohomebtn {
+  font-size: larger;
+  background-color: grey;
+  color: #eee;
+  border: none;
+  padding: 15px 32px;
+  position: relative;
+  top: 54px;
+  left: 20px;
+  margin-bottom: 200px;
+}
+.backtohomebtn:hover {
+  border: solid;
+  border-color: #eee;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.pageeditorbtn {
+  font-size: larger;
+  background-color: grey;
+  color: #eee;
+  border: none;
+  padding: 15px 32px;
+  position: relative;
+  top: 40px;
+  left: 20px;
+  margin-bottom: 200px;
+}
+.pageeditorbtn:hover {
+  border: solid;
+  border-color: #eee;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

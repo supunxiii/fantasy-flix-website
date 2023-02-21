@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+ <html lang ="en">
+    <head>
+      <meta charset = "UTF-8" ;>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" type="text/css" href="ExternalStyleSheet.css">
+      <link rel="stylesheet" type="text/css" href="BuyProductsCSS.css">
+      <title>Buy Movies, TV Series, Animes You Love!</title>
+
+      <!-- Style for the Form & to overwrite some styles from the ExternalStyleSheet -->
+      <style>
+        input[type=text], select, textarea{
+          background-color: #F0FFFF;
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+
+        }
+
+        input[type=email], select, textarea{
+          background-color: #F0FFFF;
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+
+        }
+
+        input[type=tel], select, textarea{
+          background-color: #F0FFFF;
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+
+        }
+
+        input[type=number], select, textarea{
+          background-color: #F0FFFF;
+          width: auto;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+
+        }
+
+
+        .signupbtn {
+          background-color: #2196F3;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          cursor: pointer;
+          width: 20%;
+          opacity: 0.9;
+          border-radius: 10px;
+        }
+
+
+        .cancelbtn {
+        background-color: #E50914;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        opacity: 0.9;
+        border-radius: 10px;
+        }
+
+        .placeorderbtn {
+        background-color: #2196F3;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        opacity: 0.9;
+        border-radius: 10px;
+        }
+
+
+        a{
+    			display: block;
+    			text-align: center;
+    		}
+
+        .end {
+          height: 18cm;
+        }
+
+        .fa-facebook {
+          margin-left: 28cm;
+        }
+
+        form.example button, form.search button {
+          width: 1.8cm;
+        	margin-top: -1.56cm;
+          margin-left: 6.3cm;
+        }
+
+        .web_name {
+          margin-left: 0cm;
+        }
+
+        .navbar {
+          margin-left: 0cm;
+        }
+
+        .logo{
+          margin-left: -25cm;
+          margin-top: -2.3cm;
+        }
+
+        form.search input[type=text] {
+        	margin-left: 24cm;
+          margin-top: -1.25cm;
+        }
+
+        .new{
+          margin-left: 0.5cm;
+        }
+
+        form.search button{
+          margin-top: -1.55cm;
+        	margin-left: 30cm;
+        }
+
+        .theinvoice{
+          margin-left: 10px;
+        }
+
+        .step_2{
+          margin-left: 10px;
+        }
+      </style>
+
+      <script>
+          function testVariable() {
+              debugger
+              var strText = document.getElementById("txtName").value;
+              var strText1 = document.getElementById("txtEmail").value;
+              var strText2 = document.getElementById("txtTelephone").value;
+              var strText3 = document.getElementById("txtAddress").value;
+              var strText4 = document.getElementById("txtItem").value;
+              var strText5 = document.getElementById("txtQuantity").value;
+              var strText6 = document.getElementById("txtTotal").value;
+              document.getElementById("p1").innerHTML = "Name: " + strText;
+              document.getElementById("p2").innerHTML = "Email: " + strText1;
+              document.getElementById("p3").innerHTML = "Telephone: " + strText2;
+              document.getElementById("p4").innerHTML = "Address: " + strText3;
+              document.getElementById("p5").innerHTML = "Item/Items: " + strText4;
+              document.getElementById("p6").innerHTML = "Quantity: " + strText5;
+              document.getElementById("p7").innerHTML = "Total Bill: " + strText6;
+            }
+      </script>
+
+
+
+
+
+
+
+    </head>
+
+    <body>
+
+        <!-- FIXED NAV BAR  Developer: Thashi Maleesa Godahewa -->
+        <h1 class="web_name"><br>
+            <img class="logo" alt="FantasyFlix" src="Items/FantasyFlix.png">
+            </h1>
+
+        <div class="navbar">
+            <a href="main.html" class="new">HOME</a>
+            <a href="Gallery.html">GALLERY</a>
+            <a href="Quiz.html">QUIZ</a>
+            <a href="BuyProductsPage.html">BUY</a>
+            <a href="QueryForm.html">CONTACT</a>
+
+            <div class="nav search">
+                <form class="search" action="/action_page.php" style="max-width:300px">
+                    <input type="text" class="searchbar" placeholder="Search..." name="search2">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+      <div class='main'>
+
+      <!-- Start of the Header -->
+      <div id="header-bg">
+          <div class="scroll-downs"><a href="#items_to_purchase">
+
+          </a>
+          </div>
+      </div>
+    </div>
+      <!-- End of the Header -->
+
+      <!-- Start of the Cart -->
+      <div id="items_to_purchase"></div>
+      <div id="cart-area">
+          <div id="cart-title">My Cart</div>
+          <div id="cart-monitor">
+          </div>
+      </div>
+      <!-- End of the Cart -->
+
+
+
+      <!-- Start of the Form -->
+      <div id="the_form" class="step_2">
+          <form class="step_2-content" id="myForm">
+              <div class="container">
+                  <h1>Step 2</h1>
+                  <p><i>Please fill the following "Compulsory Fields". Once you complete filling them, hit the submit button. A confimation will pop-up.</i></p>
+                  <hr>
+                  <label for="name"><b>Full Name</b></label>
+                  <input id="name" type="text" placeholder="Full Name" name="name" required>
+
+                  <label for="address"><b>Address</b></label>
+                  <input id="address" type="text" placeholder="Your Address" name="address" required>
+
+                  <label for="email"><b>Email</b></label>
+                  <input id="email" type="email" placeholder="ex: example@email.com" name="email" required>
+
+                  <label for="tele"><b>Telephone</b></label>
+                  <input id="tele" type="tel" placeholder="ex: +XXXXXXXXX" name="telephone" required>
+                  <hr>
+                  <br>
+                  <label for="additional"><b>Additional Information</b></label>
+                  <textarea id="additional" placeholder="Write something..." name="additionalinfo" style="width:1200px; height:700px"></textarea>
+                  <br>
+                  <label>
+                      <input type="checkbox" checked="checked" name="Terms and Conditons" style="margin-bottom:15px"><b>Terms and Conditions</b>
+                  </label>
+
+                  <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                              class="cancelbtn">Cancel
+                      </button>
+                      <button type="submit" class="signupbtn" onclick="confirmation()">Submit</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+      <!-- End of the Form -->
+
+
+
+      <!-- The Invoice -->
+      <div id="the_invoice" class="theinvoice">
+        <form class="invoice_form" id="InvoiceForm">
+          <p style="color:#000d1a; font-size: 40px;">Step 3: You're almost there! &#128518;</p>
+          <p style="color:#000d1a; font-size: 20px;">Place your order by giving the following details.</p>
+          <p style="color:#000d1a; font-size: 20px;">Finally click on the "Place Order" button. Then you're done!!! You can see your bill. &#128522;</p>
+          <br>
+          <label for="nameonpackage"><b>Name (This will be on your package.)</b></label>
+          <input type="text" name="Name" id="txtName" placeholder="Name">
+
+          <label for="emailonpackage"><b>Email (This will be on your package/In case if we need to contact you.)</b></label>
+          <input type="email" name="Email" id="txtEmail" placeholder="Email">
+
+          <label for="telephonenumber"><b>Telephone (In case if we need to contact you.)</b></label>
+          <input type="tel" name="Telephone" id="txtTelephone" placeholder="Telephone">
+
+          <label for="sendingaddress"><b>Address (The one that your items wants to be sent.)</b></label>
+          <input type="text" name="Address" id="txtAddress" placeholder="Address">
+
+          <label for="choosenitems"><b>Item/Items you have selected (If there're multiple items seperate the names with a comma/,):</b></label>
+          <input type="text" name="Item" id="txtItem" placeholder="Items">
+
+          <label for="quantityofitems"><b>Total number of items you have selected:</b></label>
+          <input type="number" name="Quantity" id="txtQuantity" placeholder="Quantity of Items">
+          <br>
+          <label for="finalbilltotal"><b>Total shown in "Cart Checkout" (*ADD ONLY THE VALUE WITHOUT THE DOLLAR SIGN/$):</b></label>
+          <input type="number" name="FinalTotal" id="txtTotal" placeholder="The Total">
+          <br>
+          <input type="button" class="placeorderbtn" value="Place Order" id="btnSubmit" onclick="testVariable()">
+        </form>
+      </div>
+        <div>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            <p id="p4"></p>
+            <p id="p5"></p>
+            <p id="p6"></p>
+            <p id="p7"></p>
+        </div>
+      <!-- End of the Invoice -->
+
+
+
+      <!-- Start of the Link to the Page Editor -->
+
+      <div id="the_editor" class="page_editor">
+        <hr style="height:2px;border-width:0;color:blue;background-color:#55ACEE">
+        <a class="editor" href="Supun.html" target="_blank">Edited By: Supun Wijesooriya</a>
+        <p style="text-align:center;">Copyright &copy; 2021 All rights reserved</p>
+      </div>
+
+      <!-- End of the Link to the Page Editor -->
+
+
+
+
+      <!-- Start of the Footer Developer: Thashi Maleesa Godahewa -->
+      <div class="end">
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://lk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram" target="_blank"></a>
+
+            <h1 style="color:white; text-align: center; margin-top: -0.5cm;">Subscribe</h1>
+            <p style="color:white; text-align: center;">Subscribe to Website mailing list to receive updates.</p>
+
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Enter Email Address ....." name="search2">
+                <button type="submit">Subscribe</button>
+            </form>
+            <br>
+            <a href="main.html" target="_blank" style="margin-left: 0cm; color: blue;">Home</a> <br>
+            <a href="Sitemap.html" target="_blank" style="margin-left: 0cm; color: blue;">Sitemap</a><br>
+            <a href="QueryForm.html" target="_blank" style="margin-left: 0cm; color: blue;">Contact</a>
+
+            <p style="color: white; margin-top: 1cm; text-align: center; font-size:13px;">
+
+                <u>This website uses cookies</u><br>
+                          Our website and our third party partners use cookies and related technologies to improve and customize the browsing experience for optimized ad delivery, social media  engagement <br>
+                          and analytics. By clicking 'I Agree' below, you consent to our use of cookies. You may disable cookies in your browser settings at any time. For more information, please see our <a href="#">Privacy Policy.</a></p>
+                <br>
+                <hr>
+            <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Terms and Conditions    |    Privacy Policy    |    Accessibility Statement    |    Transparency in Supply Chains Act</p>
+            <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Supplier Code of Conduct    |    Marketing to Children    |    Do Not Sell My Information    |</p>
+            <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Copyright  &copy; 2021 Fantasy<i>Flix</i></p>
+        </div>
+      <!-- End of the Footer -->
+      <script src="BuyProductsJS.js"></script>
+
+    </body>
+  </html>

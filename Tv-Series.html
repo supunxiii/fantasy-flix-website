@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ExternalStyleSheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.logo {
+    padding-top: 70px;
+      height: 260px;
+}
+.column {
+  float: left;
+  width: 7.5cm;
+  margin-bottom: 16px;
+  padding: 2px;
+  margin-left: 1.5cm;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.image {
+  box-shadow: 10px 10px 5px black;
+  height: 17.5cm;
+  width: 6.5cm;
+  background-color: white;
+}
+
+.title {
+  padding: 0 16px;
+}
+
+.title::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.subheading {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 1cm;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+</style>
+<title>Tv-Series</title>
+</head>
+<body>
+  <h1 class="web_name">
+    <img class="logo" src="finalogo.png" alt="finalogo">
+</h1>
+
+
+<div class="navbar">
+    <a href="#home" class="new">HOME</a>
+    <a href="#movies">MOVIES</a>
+    <a href="#tv-series">TV-SERIES</a>
+    <a href="#buy">BUY</a>
+    <a href="#contact">CONTACT</a>
+
+
+    <div class="nav search">
+        <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" class="searchbar" placeholder="Search..." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>
+
+<h1 style="text-align: center;font-size: 60px;color:whitesmoke;font-family: Georgia, 'Times New Roman', Times, serif;text-shadow:5px 5px black;padding-top: 120px;">TV-SERIES</h1>
+    <hr>
+    <br>
+
+<div class="row">
+  <div class="column">
+    <div class="image">
+      <img src="Sthings.jpg" alt="Stranger Things" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Stranger Things </h2>
+        <p class="subheading">Genre: Science fiction; Horror; Drama</p>
+        <p>Release: 2016</p>
+        <p>IMDb: 8.7</p>
+        <p>Seasons : 3</p>
+        <p>Episodes: 25 </p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image">
+      <img src="Teenwolf.png" alt="Teen Wolf" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Teen Wolf</h2>
+        <p class="subheading">Genre: Horror, Super-natural, Thriller</p>
+        <p>Release: 2011</p>
+        <p>IMDb: 7.6</p>
+        <p>Seasons : 6</p>
+        <p>Episodes: 100</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="image">
+      <img src="Nhie.jpg" alt="Never Have I Ever" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Never Have I Ever</h2>
+        <p class="subheading">Genre: Drama, Comedy-drama, Coming-of-age story</p>
+        <p>Release: 2020</p>
+        <p>IMDb: 7.9</p>
+        <p>Seasons: 2 </p>
+        <p>Episodes : 20</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image">
+      <img src="lucifer.jfif" alt="Lucifer " style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Lucifer </h2>
+        <p class="subheading">Genre: Horror, Mystery</p>
+        <p>Release: 2016</p>
+        <p>IMDb: 8.1</p>
+        <p>Seasons: 05 </p>
+        <p>Episodes : 86</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="Pblinders.jpg" alt="Peaky Blinders" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Peaky Blinders </h2>
+        <p class="subheading">Genre: Horror, Thriller, Mystery, Drama </p>
+        <p>Release: 2013</p>
+        <p>IMDb: 8.8</p>
+        <p>Seasons : 05</p>
+        <p>Episodes : 30</p>
+        <p><button class="button">Watch Trailer >> </button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="thirteen.jpg" alt="13 Reasons Why" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>13 Reasons Why </h2>
+        <p class="subheading">Genre: Thriller, Mystery, Drama</p>
+        <p>Release: 2017</p>
+        <p>IMDb: 7.6</p>
+        <p>Seasons : 04</p>
+        <p>Episodes : 49</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="loki.jfif" alt="Loki" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>loki </h2>
+        <p class="subheading">Genre: Action fiction</p>
+        <p>Release: 2021</p>
+        <p>IMDb: 8.6</p>
+        <p>Season: 01 </p>
+        <p>Episodes :06 </p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="breakingbad.jfif" alt="Breaking Bad" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Breaking Bad </h2>
+        <p class="subheading">Genre: Thriller, Drama</p>
+        <p>Release: 2008</p>
+        <p>IMDb: 9.4</p>
+        <p>Seasons : 05 </p>
+        <p>Episodes : 62</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="Moneyh.jpg" alt="Money Heist" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Money Heist </h2>
+        <p class="subheading">Genre: Thriller, Mystery</p>
+        <p>Release: 2017</p>
+        <p>IMDb: 8.3</p>
+        <p>Seasons: 05 </p>
+        <p>Episodes : 31</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="VampireD.jpg" alt="Vampire Diaries" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Vampire Diaries </h2>
+        <p class="subheading">Genre: Horror, Thriller, Mystery, Drama</p>
+        <p>Release: 2008</p>
+        <p>IMDb: 7.7</p>
+        <p>Seasons: 08 </p>
+        <p>Episodes: 171</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="image" >
+      <img src="Riverdale.jpg" alt="Riverdale" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Riverdale </h2>
+        <p class="subheading">Genre:  Thriller, Drama</p>
+        <p>Release: 2017</p>
+        <p>IMDb: 6.8</p>
+        <p>Seasons: 05 </p>
+        <p>Episodes: 86</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="dark.jpg" alt="Dark" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Dark </h2>
+        <p class="subheading">Genre:  Thriller, Mystery</p>
+        <p>Release: 2017</p>
+        <p>IMDb : 8.8</p>
+        <p>Seasons: 03 </p>
+        <p>Episodes: 26</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="You.jpg" alt="You" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>You </h2>
+        <p class="subheading">Genre: Thriller, Mystery</p>
+        <p>Release: 2018</p>
+        <p>IMDb: 7.7</p>
+        <p>Seasons : 02 </p>
+        <p>Episodes : 20</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="Elite.jpg" alt="Elite" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>Elite </h2>
+        <p class="subheading">Genre:  Thriller</p>
+        <p>Release: 2018</p>
+        <p>IMDb: 7.5</p>
+        <p>Seasons : 03 </p>
+        <p>Episodes : 32</p>
+        <p><button class="button">Watch Trailer >></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="image" >
+      <img src="htgawm.jfif" alt="How to get away with Murder" style="width:6.2cm; height: 8cm; padding: 0.3cm; padding-left: 0.6cm; margin-top: 0.3cm;">
+      <div class="title">
+        <h2>How to Get Away With Murder </h2>
+        <p class="subheading">Genre: Crime, Thriller, Mystery</p>
+        <p>Release: 2014</p>
+        <p>IMDb: 8.1</p>
+        <p>Seasons : 06 </p>
+        <p>Episodes : 90</p>
+        <p><button class="button"> Watch Trailer >> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<br>
+
+<div class="end">
+  <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+  <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+  <a href="https://lk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+  <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram" target="_blank"></a>
+
+  <h1 style="color:white; text-align: center; margin-top: -0.5cm;">Subscribe</h1>
+  <p style="color:white; text-align: center;">Subscribe to Website mailing list to receive updates.</p>
+
+  <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+      <input type="text" placeholder="Enter Email Address ....." name="search2">
+      <button type="submit">Subscribe</button>
+  </form>
+
+<br>
+
+  <a href="#home" target="_blank" style="margin-left: 17.4cm; color: blue;">Home</a> <br>
+  <a href="#sitemap" target="_blank" style="margin-left: 17.3cm; color: blue;">Sitemap</a><br>
+  <a href="#contact" target="_blank" style="margin-left: 17.3cm; color: blue;">Contact</a>
+
+  <p style="color: white; margin-top: 1cm; text-align: center;">
+
+    <u>This website uses cookies</u><br>
+              Our website and our third party partners use cookies and related technologies to improve and customize the browsing experience for optimized ad delivery, social media  engagement <br> 
+              and analytics. By clicking 'I Agree' below, you consent to our use of cookies. You may disable cookies in your browser settings at any time. For more information, please see our <a href="#">Privacy Policy.</a></p>
+    <br>
+    <hr>
+<p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Terms and Conditions    |    Privacy Policy    |    Accessibility Statement    |    Transparency in Supply Chains Act</p>
+<p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Supplier Code of Conduct    |    Marketing to Children    |    Do Not Sell My Information    |</p>
+<p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Copyright &#169; 2021 Fantacy<i>Flix</i></p>
+</div>
+</body>
+</html>

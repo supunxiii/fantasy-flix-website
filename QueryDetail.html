@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="ExternalStyleSheet.css">
+
+        <title>QueryDetail</title>
+
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif; 
+            }
+            .logo {
+                margin-top: -1.5cm;
+            }
+            .web_name {
+                margin-left: 0cm;
+            }
+            .navbar {
+                margin-left: 0cm;
+            }
+            .results {
+                height: 15cm;
+                margin-top: 2cm;
+                margin-left: 0cm;
+                background: linear-gradient(to bottom, #34495e ,#315189, #2471A3  );
+                font-family: Arial, Helvetica, sans-serif; 
+                text-align: center;
+                background-repeat: no-repeat;
+                color: #E5E8E8;
+                padding-top: 90px;
+            }
+            .edit, .send {
+                background-color: #1E2337;
+                border-color: #1E2337;
+                color: white;
+                width: 5cm;
+                height: 1cm;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            .send {
+                margin-top: 0.2cm;
+            }
+            .edit:hover, .send:hover {
+                background-color: #007bb5;
+                border-color: #007bb5;
+                color: white;
+            }
+            .page_editor {
+            color: white;
+            background-color: #2471A3 ;
+            text-align: center;
+            height: 0cm;
+            margin-top: -1.1cm;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="results">
+            <h2>Your Query Details</h2>
+            <br>
+            <h6>
+                Name: <span id="result1"></span>
+            </h6>
+            <h6>
+                Email: <span id="result2"></span>
+            </h6>
+            <h6>
+                Subject: <span id="result3"></span>
+            </h6>
+            <h6>
+                Details: <span id="result4"></span>
+            </h6>
+            <br><br>
+
+            <form action="QueryForm.html">
+                <button type="submit" class="edit" value="edit">Edit</button>
+            </form>
+            
+            <form action="mailto:maleesa.20201030@iit.ac.lk" method="post" enctype="text/plain">
+                <button type="submit" class="send" value="Send">Send</button>
+            </form>
+
+            <br>
+            <div class="page_editor">
+                <br><br>
+                <hr>
+                <a href="PageEditor.html" target="_blank">Page Developer</a>
+            </div>
+            
+
+            <script>
+                window.addEventListener('load', () => {
+                    const params = (new URL(document.location)).searchParams;
+                    const name = params.get('name');
+                    const email = params.get('email');
+                    const subject = params.get('radio');
+                    const details = params.get('detail');
+
+                    document.getElementById('result1').innerHTML = name;
+                    document.getElementById('result2').innerHTML = email;
+                    document.getElementById('result3').innerHTML = subject;
+                    document.getElementById('result4').innerHTML = details;
+                })
+            </script>
+
+        </div>
+
+        <div class="web_name"><br>
+            <img class="logo" src="FinalLogo.png" alt="logo">
+        </div>
+
+        <div class="navbar">
+            <a href="main.html" class="new">HOME</a>
+            <a href="Gallery.html">GALLERY</a>
+            <a href="Quiz.html">QUIZ</a>
+            <a href="BuyProductsPage.html">BUY</a>
+            <a href="QueryForm.html">CONTACT</a>
+
+            <div class="nav search">
+                <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+                    <input type="text" class="searchbar" placeholder="Search..." name="search2">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        
+
+        <div class="end">
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://lk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram" target="_blank"></a>
+            
+            <h1 style="color:white; text-align: center; margin-top: -0.5cm;">Subscribe</h1>
+            <p style="color:white; text-align: center;">Subscribe to Website mailing list to receive updates.</p>
+        
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Enter Email Address ....." name="search2">
+                <button type="submit">Subscribe</button>
+            </form>
+            <br>
+            <a href="main.html" target="_blank" style="margin-left: 17.4cm; color: blue;">Home</a> <br>
+            <a href="Sitemap.html" target="_blank" style="margin-left: 17.3cm; color: blue;">Sitemap</a><br>
+            <a href="QueryForm.html" target="_blank" style="margin-left: 17.3cm; color: blue;">Contact</a>
+
+            <p style="color: white; margin-top: 1cm; text-align: center;">
+
+                <u>This website uses cookies</u><br>
+                        Our website and our third party partners use cookies and related technologies to improve and customize the browsing experience for optimized ad delivery, social media  engagement <br> 
+                        and analytics. By clicking 'I Agree' below, you consent to our use of cookies. You may disable cookies in your browser settings at any time. For more information, please see our <a href="#">Privacy Policy.</a></p>
+                <br>
+                <hr>
+            <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Terms and Conditions    |    Privacy Policy    |    Accessibility Statement    |    Transparency in Supply Chains Act</p>
+            <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Supplier Code of Conduct    |    Marketing to Children    |    Do Not Sell My Information    |</p>
+            <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Copyright &#169; 2021 Fantasy<i>Flix</i></p>
+        </div>
+
+    </body>
+</html>

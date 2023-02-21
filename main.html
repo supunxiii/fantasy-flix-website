@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="ExternalStyleSheet.css">
+
+    <title>main</title>
+
+    <style>
+        .mySlides {display:none;}
+
+        .slideshow {
+            margin-left: -0.5cm;
+            margin-top: 0.8cm;
+        }
+
+        body {
+            margin:0;
+            margin-left: 0.2cm;
+            height: 18cm;
+            padding-top: 90px;
+            background-size: cover; 
+            background-size: 100%; 
+			font-family: 'Times New Roman', Times, serif; 
+        }
+        
+        .topic{
+            background-color: #2196F3;
+            color: white;
+            margin-top: -0.5cm;
+            margin-left: -0.3cm;
+            height: 1.7cm;
+            padding-left: 1.3cm;
+            padding-top: 0.3cm;
+        }
+        .movies, .tv-series {
+            font-size: 22px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            background-color: #34495e;
+            padding: 10px;
+            margin-left: -0.3cm;
+            margin-top: -0.3cm;
+        }
+        .grid-item {
+            background-color: #34495e;
+            color: white;
+            border: 1px solid #34495e;
+            padding: 20px;
+            text-align: center;
+        }
+        .images {
+            width: 5cm;
+            height: 8cm;
+        }
+        .name {
+            color: #2DDCC9;
+        }
+        .page_editor {
+            color: white;
+            background-color: #34495e;
+            text-align: center;
+            height: 2cm;
+            margin-left: -0.7cm;
+        }
+        .logo {
+            margin-top: -1.45cm;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="web_name"><br>
+        <img class="logo" src="FinalLogo.png" alt="logo">
+    </div>
+
+    <div class="navbar">
+        <a href="main.html" class="new">HOME</a>
+        <a href="Gallery.html">GALLERY</a>
+        <a href="Quiz.html">QUIZ</a>
+        <a href="BuyProductsPage.html">BUY</a>
+        <a href="QueryForm.html">CONTACT</a>
+
+        <div class="nav search">
+            <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" class="searchbar" placeholder="Search..." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="slideshow">
+        <div class="w3-content w3-section" style="max-width:1400px">
+            <img class="mySlides" src="Blackwidow.jpg" style="width:100%" alt="blackwidow">
+            <img class="mySlides" src="Cruella.jpg" style="width:100%" alt="cruella">
+            <img class="mySlides" src="EN-US_FearStreet_Main_Trilogy_Payoff_Horizontal_960x363_RGB_Pre.png" style="width:100%" alt="fearstreet">
+            <img class="mySlides" src="pratt.webp" style="width:100%" alt="tomorrowwar">
+            <img class="mySlides" src="luca.jpg" style="width:100%" alt="luca">
+            <img class="mySlides" src="Hitman'.jpg" style="width:100%" alt="hitman">
+            <img class="mySlides" src="wandavision.jpg" style="width:100%" alt="wandavision">
+            <img class="mySlides" src="pratt.webp" style="width:100%" alt="pratt2">
+        </div>
+        
+        <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+    </div>
+
+    <div class="topic"><a href="Movies.html" class="movies">MOVIES &nbsp; >></a></div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="FearStreet1.jpg" class="images" alt="fearstreet1">
+            <h3 class="name">Fear Street-Part 1</h3>
+            <h6>Fear Street Part One: 1994 is a 2021 American teen slasher film  from an original story by Kyle Killen, Graziadei, and Janiak.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="FearStreet2.jfif" class="images" alt="fearstreet2">
+            <h3 class="name">Fear Street-Part 2</h3>
+            <h6>Fear Street Part Two: 1978 is a 2021 American teen slasher film  from an original story by Kyle Killen, Graziadei, and Janiak.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="luca.jpeg" class="images" alt="luca2">
+            <h3 class="name">Luca</h3>
+            <h6>Luca is a 2021 American computer-animated coming-of-age fantasy film distributed by Walt Disney Studios Motion Pictures.</h6>
+        </div>  
+        <div class="grid-item">
+            <img src="Quietplace2.jfif" class="images" alt="quietplace2">
+            <h3 class="name">Quiet Place 2</h3>
+            <h6>A Quiet Place Part II is a 2021 American horror film, and the sequel to 2018's A Quiet Place film.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="thetomorrowland.jpg" class="images" alt="tomorrowland">
+            <h3 class="name">The Tomorrow War</h3>
+            <h6>The Tomorrow War is a 2021 American military science fiction action film directed by Chris McKay and starring Chris Pratt.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="JagameThanthiriam.jfif" class="images" alt="jagame">
+            <h3 class="name">Jagame Thanthiriam</h3>
+            <h6>Jagame Thandhiram is a 2021 Indian Tamil-language action film. The film stars Dhanush, James Cosmo, Aishwarya Lekshmi, Joju George and Kalaiyarasan.</h6>
+        </div>  
+        <div class="grid-item">
+            <img src="LetUsIn.jfif" class="images" alt="LetUsIn">
+            <h3 class="name">Let Us In</h3>
+            <h6>Let Us In is a 2021 family science fiction-horror film written and directed by Craig Moss. It stars Tobin Bell, Sadie Stanley, Sky Alexis, Mackenzie Ziegler, Lauren Stamile, Heather Ann Gottlieb and Siena Agudong.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="Hitmans.jfif" class="images" alt="hitmans">
+            <h3 class="name">Hitmans Wife's Bodyguard</h3>
+            <h6>Hitman's Wife's Bodyguard is a 2021 American action comedy film directed by Patrick Hughes and written by Tom O'Connor and Brandon and Phillip Murphy.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="Twist.jpg" class="images" alt="twist">
+            <h3 class="name">Twist</h3>
+            <h6>Twist is a 2021 British crime drama film directed by Martin Owen and co-produced by Noel Clarke and Jason Maza. The film is a modern day take on Charles Dickens' 1838 novel, Oliver Twist.</h6>
+        </div> 
+        <div class="grid-item">
+            <img src="Cruella2.jpg" class="images" alt="cruella2">
+            <h3 class="name">Cruella</h3>
+            <h6>Cruella is a 2021 American crime comedy film based on the character Cruella de Vil from Dodie Smith's 1956 novel The Hundred and One Dalmatians.</h6>
+        </div>     
+    </div>
+
+    <div class="topic"><a href="Tv-Series.html" class="tv-series">TV-SERIES &nbsp; >></a></div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="loki.jpg" class="images" alt="loki">
+            <h3 class="name">Loki</h3>
+            <h6>Loki is an American television series created by Michael Waldron for the streaming service Disney+, based on Marvel Comics featuring the character of the same name.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="thewitcher.jpg" class="images" alt="witcher">
+            <h3 class="name">The witcher</h3>
+            <h6>The Witcher is a Polish-American fantasy drama streaming television series created by Lauren Schmidt Hissrich, based on the book series of the same name by Polish writer Andrzej Sapkowski.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="lucifer.jpg" class="images" alt="lucifer">
+            <h3 class="name">Lucifer</h3>
+            <h6>Lucifer is an American urban fantasy superhero television series developed by Tom Kapinos that premiered on Fox on January 25, 2016.</h6>
+        </div>  
+        <div class="grid-item">
+            <img src="riverdale.jpg" class="images" alt="riverdale">
+            <h3 class="name">Riverdale</h3>
+            <h6>Riverdale is an American teen drama television series based on the characters of Archie Comics. The series was adapted for The CW by Archie Comics' chief creative officer Roberto Aguirre-Sacasa.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="TheStrangerThings.jpg" class="images" alt="strangerthings">
+            <h3 class="name">Stranger Things</h3>
+            <h6>Stranger Things is an American science fiction horror drama television series created by the Duffer Brothers. The brothers serve as showrunners and are executive producers along with Shawn Levy and Dan Cohen.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="13ThingsWhy.jpg" class="images" alt="13thingswhy">
+            <h3 class="name">13 Things Why</h3>
+            <h6>13 Reasons Why is an American teen drama streaming television series developed by Brian Yorkey, based on the 2007 novel Thirteen Reasons Why by Jay Asher.</h6>
+        </div>  
+        <div class="grid-item">
+            <img src="TeenWolf.jpg" class="images" alt="teenwolf">
+            <h3 class="name">Teen Wolf</h3>
+            <h6>Teen Wolf is an American supernatural teen drama television series developed by Jeff Davis for MTV, loosely based on the 1985 film of the same name.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="TeenWolf.jpg" class="images" alt="teenwolf">
+            <h3 class="name">The Mist</h3>
+            <h6>The Mist is an American science fiction-horror thriller television series developed by Christian Torpe. It is based on the 1980 horror novella of the same name by author Stephen King.</h6>
+        </div>
+        <div class="grid-item">
+            <img src="dark.jpg" class="images" alt="dark">
+            <h3 class="name">Dark</h3>
+            <h6>Dark is a German science fiction thriller streaming television series co-created by Baran bo Odar and Jantje Friese. It ran for three seasons from 2017 to 2020.</h6>
+        </div> 
+        <div class="grid-item">
+            <img src="peakyblinders.jpg" class="images" alt="peakyblinders">
+            <h3 class="name">Peaky Blinders</h3>
+            <h6>Peaky Blinders is a British period crime drama television series created by Steven Knight. The series follows the exploits of the Shelby crime family in the direct aftermath of the First World War.</h6>
+        </div>  
+        <hr><hr><hr><hr><hr>
+    </div>
+
+    
+    <div class="page_editor">
+        <a href="PageEditor.html" target="_blank" >Page Developer</a><br>
+        <a href="studentdetails.html">Student Details</a>
+    </div>
+    
+    <div class="end">
+        <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://lk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram" target="_blank"></a>
+        
+        <h1 style="color:white; text-align: center; margin-top: -0.5cm;">Subscribe</h1>
+        <p style="color:white; text-align: center;">Subscribe to Website mailing list to receive updates.</p>
+       
+        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Enter Email Address ....." name="search2">
+            <button type="submit">Subscribe</button>
+        </form>
+        <br>
+        <a href="main.html" target="_blank" style="margin-left: 17.4cm; color: blue;">Home</a> <br>
+        <a href="Sitemap.html" target="_blank" style="margin-left: 17.3cm; color: blue;">Sitemap</a><br>
+        <a href="QueryForm.html" target="_blank" style="margin-left: 17.3cm; color: blue;">Contact</a>
+
+        <p style="color: white; margin-top: 1cm; text-align: center;">
+
+            <u>This website uses cookies</u><br>
+                      Our website and our third party partners use cookies and related technologies to improve and customize the browsing experience for optimized ad delivery, social media  engagement <br> 
+                      and analytics. By clicking 'I Agree' below, you consent to our use of cookies. You may disable cookies in your browser settings at any time. For more information, please see our <a href="#">Privacy Policy.</a></p>
+            <br>
+            <hr>
+        <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Terms and Conditions    |    Privacy Policy    |    Accessibility Statement    |    Transparency in Supply Chains Act</p>
+        <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Supplier Code of Conduct    |    Marketing to Children    |    Do Not Sell My Information    |</p>
+        <p style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Copyright &#169; 2021 Fantasy<i>Flix</i></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="ExternalStyleSheet.css">
+
+    <title>Query Form</title>
+    <style>
+        .body {
+			font-family: 'Times New Roman', Times, serif; 
+        }
+        .web_name {
+            margin-left: 0cm;
+        }
+        .navbar {
+            margin-left: 0cm;
+        }
+        .form {
+            background: linear-gradient(to bottom, #34495e ,#315189, #2471A3  );
+            font-family: Arial, Helvetica, sans-serif; 
+            text-align: center;
+            background-repeat: no-repeat;
+            color: #E5E8E8;
+            padding-top: 90px;
+            margin-top: 2cm;
+        }
+        #name, #email, #detail {
+            font-family: 'Times New Roman', Times, serif; 
+            color: #808B96 ;
+            width: 11cm;
+            height: 0.8cm;
+        }
+        #radio1, #radio2, #radio3, #radio4 {
+            font-family: 'Times New Roman', Times, serif; 
+        }
+        .text {
+            font-size: 120%;
+        }
+        .subject {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .submit {
+            background-color: #1E2337;
+            border-color: #1E2337;
+            color: white;
+            width: 11cm;
+            height: 1cm;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .page_editor {
+            color: white;
+            background-color: #2471A3;
+            text-align: center;
+            height: 1.5cm;
+            margin-top: -1.1cm;
+        }
+    </style>
+</head>
+<body class="body">
+    <h1 class="web_name"><br>
+        <img class="logo" src="FinalLogo.png" alt="logo">
+        </h1>
+
+    <div class="navbar">
+        <a href="main.html" class="new">HOME</a>
+        <a href="Gallery.html">GALLERY</a>
+        <a href="Quiz.html">QUIZ</a>
+        <a href="BuyProductsPage.html">BUY</a>
+        <a href="QueryForm.html">CONTACT</a>
+
+        <div class="nav search">
+            <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" class="searchbar" placeholder="Search..." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="form">
+        <h1 style="font-size: 350%;">Contact Us</h1>
+        <p>Got a question? We'd love to hear from you. Send us a message</p> <p>and we'll respond as soon as possible.</p>
+
+        <form id="myForm" name="myForm" action="QueryDetail.html" target="_self" onsubmit="return alertBox()">
+        <br>
+        <div class="input">
+            <label for="name" class="text"><b>First name: </b></label><br>
+            <input type="text" id="name" name="name" ><br><br>
+            <label for="email" class="text" style="margin-right: 0.8cm"><b>Email: </b></label><br>
+            <input type="text" id="email" name="email" ><br>
+            <br>
+            <p class="text"><b>Subject: </b></p>
+            <div class="subject">
+                <input type="radio" id="radio1" name="radio" value=" Purchasing " style="margin-left: -0.25cm;">
+                <label for="radio1">Purchasing</label><br>
+                <input type="radio" id="radio2" name="radio" value=" Video Errors">
+                <label for="radio2">Video Errors</label><br>
+                <input type="radio" id="radio3" name="radio" value=" Membership" style="margin-left: -0.05cm;">
+                <label for="radio3">Membership</label><br>
+                <input type="radio" id="radio4" name="radio" value=" Other" style="margin-left: 0.05cm;">
+                <label for="radio4">Other Issues</label><br>
+                <br><br>
+                <label for="detail" class="text" ><b>Query in detail: &nbsp;</b></label><br>
+                <input type="text" id="detail" style="height: 3cm; width: 11cm;" name="detail"><br><br>
+                <br>
+            </div>
+        </div>
+
+        <input type="submit" class="submit" value="View Query" onclick="alertBox()" >
+        <br>
+        <br>
+        <br>
+        </form> 
+
+        <script>
+             function alertBox() {
+                var x = document.forms["myForm"]["name"].value;
+                if (x == null || x == "") {
+                    alert("Please enter your name");
+                    return false;
+                }
+                var x = document.forms["myForm"]["email"].value;
+                if (x == null || x == "") {
+                    alert("Please enter a valid email address");
+                    return false;
+                }
+                var x = document.forms["myForm"]["radio"].value;
+                if (x == null || x == "") {
+                    alert("Please select an option");
+                    return false;
+                }
+                var x = document.forms["myForm"]["detail"].value;
+                if (x == null || x == "") {
+                    alert("Please enter the query detail");
+                    return false;
+                }
+            }
+        </script>
+    </div>
+
+    <br>
+    <div class="page_editor">
+        <hr>
+        <a href="PageEditor.html" target="_blank" >Page Developer</a>
+    </div>
+
+    <div class="end">
+        <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://lk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram" target="_blank"></a>
+        
+        <h1 style="color:white; text-align: center; margin-top: -0.5cm;">Subscribe</h1>
+        <p style="color:white; text-align: center;">Subscribe to Website mailing list to receive updates.</p>
+       
+        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Enter Email Address ....." name="search2">
+            <button type="submit">Subscribe</button>
+        </form>
+        <br>
+        <a href="main.html" target="_blank" style="margin-left: 17.4cm; color: blue;">Home</a> <br>
+        <a href="Sitemap.html" target="_blank" style="margin-left: 17.3cm; color: blue;">Sitemap</a><br>
+        <a href="QueryForm.html" target="_blank" style="margin-left: 17.3cm; color: blue;">Contact</a>
+
+        <p style="color: white; margin-top: 1cm; text-align: center;">
+
+            <u>This website uses cookies</u><br>
+                      Our website and our third party partners use cookies and related technologies to improve and customize the browsing experience for optimized ad delivery, social media  engagement <br> 
+                      and analytics. By clicking 'I Agree' below, you consent to our use of cookies. You may disable cookies in your browser settings at any time. For more information, please see our <a href="#">Privacy Policy.</a></p>
+            <br>
+            <hr>
+        <p style="color: white; text-align: center;font-family: Arial, Helvetica, sans-serif;">Terms and Conditions    |    Privacy Policy    |    Accessibility Statement    |    Transparency in Supply Chains Act</p>
+        <p style="color: white; text-align: center;font-family: Arial, Helvetica, sans-serif;">Supplier Code of Conduct    |    Marketing to Children    |    Do Not Sell My Information    |</p>
+        <p style="color: white; text-align: center;font-family: Arial, Helvetica, sans-serif;">Copyright &#169; 2021 Fantasy<i>Flix</i></p>
+    </div>
+
+
+</body>
+</html>

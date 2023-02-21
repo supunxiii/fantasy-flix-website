@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .logo {
+        padding-top: 50px;
+        padding-right: 100px;
+      }
+      .end {
+        padding-top: 30px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="Navigation bar stylesheet" href="ExternalStyleSheet.css" />
+    <link rel="Quiz page style sheet stylesheet" href="Quiz.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Quiz</title>
+  </head>
+
+  <body>
+    <div class="headers">
+      <h1 class="web_name">
+        <br /><img class="logo" alt="Logo" src="images/final%20logo.png" />
+      </h1>
+
+      <div class="navbar">
+        <a href="main.html" class="new">HOME</a>
+        <a href="Gallery.html">GALLERY</a>
+        <a href="Quiz.html">QUIZ</a>
+        <a href="BuyProductsPage.html">BUY</a>
+        <a href="QueryForm.html">CONTACT</a>
+
+        <div class="nav search">
+          <form
+            class="search"
+            action="/action_page.php"
+            style="margin: auto; max-width: 300px"
+          >
+            <input
+              type="text"
+              class="searchbar"
+              placeholder="Search..."
+              name="search2"
+            />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="header">
+        <p id="ad" style="margin-top: 3%">
+          Get a chance to win two tickets for the upcoming movie , Jurassic
+          World: Dominion
+        </p>
+        <br />
+        <p id="challenge">
+          How well do you know about movies and tv series , test your knowledge
+          in this one minute quiz and get your chance to win two tickets for the
+          upcoming movie , Jurrasic world : Dominion !<br />
+          Press Start, if you have what it takes!
+        </p>
+        <button id="Startbtn" onclick="starttimer()">Start</button>
+      </div>
+
+      <div class="scoreboard" id="scoreboard">
+        <p id="Yourscore"></p>
+        <p id="Score"></p>
+        <p id="Comment"></p>
+      </div>
+
+      <form class="Question1">
+        <div class="Question">
+          <img
+            src="images/Red%20or%20blue.jpg"
+            alt="Red and Blue"
+            width="600"
+            height="400"
+            class="image"
+          />
+          <p class="QuizQ">
+            In The Matrix, does Neo take the blue pill or the red pill?
+          </p>
+          <div class="answerbox">
+            <label class="container container1"
+              >Blue pill
+              <input
+                onclick="show(this.form)"
+                type="radio"
+                name="radio"
+                value="Blue pill"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Red pill
+              <input
+                onclick="show(this.form)"
+                type="radio"
+                name="radio"
+                value="Red pill"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Red and Blue pill
+              <input
+                onclick="show(this.form)"
+                type="radio"
+                name="radio"
+                value="Red and Blue pill"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >None of the above
+              <input
+                onclick="show(this.form)"
+                type="radio"
+                name="radio"
+                value="None of the above"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <form class="Question2">
+        <div class="Question">
+          <img
+            src="images/13%20reasons%20why.jpg"
+            alt="13 reasons why"
+            width="640"
+            height="400"
+            class="image"
+          />
+          <p class="QuizQ">
+            Where did Clay Jensen and Hannah Baker work together?
+          </p>
+          <div class="answerbox">
+            <label class="container container1"
+              >Cresmont movie theatre
+              <input
+                onclick="show1(this.form)"
+                type="radio"
+                name="radio"
+                value="Cresmont movie theatre"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Baker's drugs
+              <input
+                onclick="show1(this.form)"
+                type="radio"
+                name="radio"
+                value="Baker's drugs"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Blue Spot Liqour
+              <input
+                onclick="show1(this.form)"
+                type="radio"
+                name="radio"
+                value="Blue Spot Liqour"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Eisenhower park
+              <input
+                onclick="show1(this.form)"
+                type="radio"
+                name="radio"
+                value="Eisenhower park"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <form class="Question3">
+        <div class="Question">
+          <img
+            src="images/eleven.jpg"
+            alt="eleven"
+            width="600"
+            height="400"
+            class="image"
+          />
+          <p class="QuizQ">
+            What foodstuff is Eleven a huge fan of – living off a stolen supply
+            of them when she was stranded in the woods, in Stranger things?
+          </p>
+          <div class="answerbox">
+            <label class="container container1"
+              >Ice Cream
+              <input
+                onclick="show2(this.form)"
+                type="radio"
+                name="radio"
+                value="Ice Cream"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Apples
+              <input
+                onclick="show2(this.form)"
+                type="radio"
+                name="radio"
+                value="Apples"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Eggos
+              <input
+                onclick="show2(this.form)"
+                type="radio"
+                name="radio"
+                value="Eggos"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Pancakes
+              <input
+                onclick="show2(this.form)"
+                type="radio"
+                name="radio"
+                value="Pancakes"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <form class="Question4">
+        <div class="Question">
+          <img
+            src="images/teenwolf.jpg"
+            alt="teenwolf"
+            width="700"
+            height="400"
+            class="image"
+          />
+          <p class="QuizQ">In which fictional town was Teen wolf set?</p>
+          <div class="answerbox">
+            <label class="container container1"
+              >Mystic falls
+              <input
+                onclick="show3(this.form)"
+                type="radio"
+                name="radio"
+                value="Mystic falls"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Beacon Hills
+              <input
+                onclick="show3(this.form)"
+                type="radio"
+                name="radio"
+                value="Beacon Hills"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Sunnydale
+              <input
+                onclick="show3(this.form)"
+                type="radio"
+                name="radio"
+                value="Sunnydale"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Stars Hollow
+              <input
+                onclick="show3(this.form)"
+                type="radio"
+                name="radio"
+                value="Stars Hollow"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <form class="Question5">
+        <div class="Question">
+          <img
+            src="images/Anakin.jpg"
+            alt="anakin"
+            width="600"
+            height="400"
+            class="image"
+          />
+          <p class="QuizQ">
+            What happened to Anakin Skywalker during the battle with Count
+            Dooku?
+          </p>
+          <div class="answerbox">
+            <label class="container container1"
+              >He lost his left leg
+              <input
+                onclick="show4(this.form)"
+                type="radio"
+                name="radio"
+                value="He lost his left leg"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >He lost his right arm
+              <input
+                onclick="show4(this.form)"
+                type="radio"
+                name="radio"
+                value="He lost his right arm"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >He lost his right leg
+              <input
+                onclick="show4(this.form)"
+                type="radio"
+                name="radio"
+                value="He lost his right leg"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >He lost
+              <input
+                onclick="show4(this.form)"
+                type="radio"
+                name="radio"
+                value="He lost"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <form class="Question6">
+        <div class="Question">
+          <img
+            src="images/locke-and-key-kids-netflix.jpg"
+            alt="locke and key"
+            width="600"
+            height="400"
+            class="image"
+          />
+          <p class="QuizQ">Who discovered the Anywhere key?</p>
+          <div class="answerbox">
+            <label class="container container1"
+              >Kinsey
+              <input
+                onclick="show5(this.form)"
+                type="radio"
+                name="radio"
+                value="Kinsey"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Tyler
+              <input
+                onclick="show5(this.form)"
+                type="radio"
+                name="radio"
+                value="Tyler"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Bode
+              <input
+                onclick="show5(this.form)"
+                type="radio"
+                name="radio"
+                value="Bode"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Tommy
+              <input
+                onclick="show5(this.form)"
+                type="radio"
+                name="radio"
+                value="Tommy"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <form class="Question7">
+        <div class="Question">
+          <img
+            src="images/The-Dark-Knight-Rises.jpg"
+            alt="The dark knight rises"
+            width="700"
+            height="400"
+            class="image"
+          />
+
+          <p class="QuizQ">
+            What year was Batman Begins, the first film of an eventual trilogy,
+            released?
+          </p>
+          <div class="answerbox">
+            <label class="container container1"
+              >2006
+              <input
+                onclick="show6(this.form)"
+                type="radio"
+                name="radio"
+                value="2006"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >2005
+              <input
+                onclick="show6(this.form)"
+                type="radio"
+                name="radio"
+                value="2005"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >2001
+              <input
+                onclick="show6(this.form)"
+                type="radio"
+                name="radio"
+                value="2001"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >2009
+              <input
+                onclick="show6(this.form)"
+                type="radio"
+                name="radio"
+                value="2009"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <form class="Question8">
+        <div class="Question">
+          <img
+            src="images/hanszimmer.jpg"
+            alt="hans Zimmer"
+            width="600"
+            height="400"
+            class="image"
+          />
+          <p class="QuizQ">
+            What's the name of the composer who's a frequent collaborator with
+            Nolan, working on the Batman films and Inception?
+          </p>
+          <div class="answerbox">
+            <label class="container container1"
+              >Hans Zimmer
+              <input
+                onclick="show7(this.form)"
+                type="radio"
+                name="radio"
+                value="Hans Zimmer"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >John Williams
+              <input
+                onclick="show7(this.form)"
+                type="radio"
+                name="radio"
+                value="John Williams"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Mark Mothersbaugh
+              <input
+                onclick="show7(this.form)"
+                type="radio"
+                name="radio"
+                value="Mark Mothersbaugh"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Danny Elfman
+              <input
+                onclick="show7(this.form)"
+                type="radio"
+                name="radio"
+                value="Danny Elfman"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <form class="Question9">
+        <div class="Question">
+          <img
+            src="images/giphy.gif"
+            alt="giphy"
+            width="460"
+            height="400"
+            class="image"
+          />
+          <p class="QuizQ">
+            What was the name of the first film in the 'Harry Potter' series?
+          </p>
+          <div class="answerbox">
+            <label class="container container1"
+              >Harry Potter And The Philosopher's Stone
+              <input
+                onclick="show8(this.form)"
+                type="radio"
+                name="radio"
+                value="Harry Potter And The Philosopher's Stone"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Harry Potter And The Chamber of Secrets
+              <input
+                onclick="show8(this.form)"
+                type="radio"
+                name="radio"
+                value="Harry Potter And The Chamber of Secrets"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Harry Potter and The Goblet of Fire
+              <input
+                onclick="show8(this.form)"
+                type="radio"
+                name="radio"
+                value="Harry Potter and The Goblet of Fire"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Harry Potter and The Order of The Phoenix
+              <input
+                onclick="show8(this.form)"
+                type="radio"
+                name="radio"
+                value="Harry Potter and The Order of The Phoenix"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <form class="Question10">
+        <div class="Question">
+          <img
+            src="images/tesseract.gif"
+            alt="tesseract"
+            width="500"
+            height="360"
+            class="image"
+          />
+          <p class="QuizQ">
+            What's the name of the mysterious blue glowing cube that Loki
+          </p>
+          <div class="answerbox">
+            <label class="container container1"
+              >The Orb
+              <input
+                onclick="show9(this.form)"
+                type="radio"
+                name="radio"
+                value="The Orb"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >Tesseract
+              <input
+                onclick="show9(this.form)"
+                type="radio"
+                name="radio"
+                value="Tesseract"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >The Force
+              <input
+                onclick="show9(this.form)"
+                type="radio"
+                name="radio"
+                value="The Force"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+
+            <label class="container container1"
+              >UV lamp
+              <input
+                onclick="show9(this.form)"
+                type="radio"
+                name="radio"
+                value="UV lamp"
+              />
+              <span class="checkmark"></span> </label
+            ><br />
+          </div>
+        </div>
+      </form>
+
+      <button onclick="check()" class="checkbutton">Check</button>
+      <a href="Shuaib.html" class="pageeditorbtn">Page Editor</a>
+    </div>
+    <div class="end">
+      <a
+        href="https://www.facebook.com/"
+        class="fa fa-facebook"
+        target="_blank"
+      ></a>
+      <a
+        href="https://twitter.com/?lang=en"
+        class="fa fa-twitter"
+        target="_blank"
+      ></a>
+      <a
+        href="https://lk.linkedin.com/"
+        class="fa fa-linkedin"
+        target="_blank"
+      ></a>
+      <a
+        href="https://www.instagram.com/accounts/login/"
+        class="fa fa-instagram"
+        target="_blank"
+      ></a>
+
+      <h1 style="color: white; text-align: center; margin-top: -0.5cm">
+        Subscribe
+      </h1>
+      <p style="color: white; text-align: center">
+        Subscribe to Website mailing list to receive updates.
+      </p>
+
+      <form
+        class="example"
+        action="/action_page.php"
+        style="margin: auto; max-width: 300px"
+      >
+        <input
+          type="text"
+          placeholder="Enter Email Address ....."
+          name="search2"
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+      <br />
+      <a href="main.html" target="_blank" style="margin-left: 17.4cm; color: blue"
+        >Home</a
+      >
+      <br />
+      <a
+        href="Sitemap.html"
+        target="_blank"
+        style="margin-left: 17.3cm; color: blue"
+        >Sitemap</a
+      ><br />
+      <a
+        href="QueryForm.html"
+        target="_blank"
+        style="margin-left: 17.3cm; color: blue"
+        >Contact</a
+      >
+
+      <p style="color: white; margin-top: 1cm; text-align: center">
+        <u>This website uses cookies</u><br />
+        Our website and our third party partners use cookies and related
+        technologies to improve and customize the browsing experience for
+        optimized ad delivery, social media engagement <br />
+        and analytics. By clicking 'I Agree' below, you consent to our use of
+        cookies. You may disable cookies in your browser settings at any time.
+        For more information, please see our <a href="#">Privacy Policy.</a>
+      </p>
+      <br />
+      <hr />
+      <p
+        style="
+          color: white;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+        "
+      >
+        Terms and Conditions | Privacy Policy | Accessibility Statement |
+        Transparency in Supply Chains Act
+      </p>
+      <p
+        style="
+          color: white;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+        "
+      >
+        Supplier Code of Conduct | Marketing to Children | Do Not Sell My
+        Information |
+      </p>
+      <p
+        style="
+          color: white;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+        "
+      >
+        Copyright &#169; 2021 Fantacy<i>Flix</i>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

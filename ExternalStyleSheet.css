@@ -1,0 +1,131 @@
+body {
+    background-color: #34495e;
+}
+.web_name {
+    background-color: #000d1a;
+    color: white;
+    width: 100%;
+    top: 0cm;
+    height: 4.5cm;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -1cm; 
+    margin-left: -0.2cm; 
+    position: fixed;
+}
+.navbar {
+    background-color: #000d1a;
+    position: fixed;
+    top: 2.3cm;
+    width: 100%;
+    margin-left: -0.2cm;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+.navbar a.active {
+    background-color: #ddd;
+    color: black;
+}
+.new {
+    margin-left: 1cm;
+}
+.end {
+    background-color: #000d1a;
+    height: 15.2cm;
+    margin-top: 0cm;
+    margin-left: -0.5cm;
+}
+.fa {
+    padding: 9px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    margin-top: 0.5cm;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+	margin-left: 30cm;
+}
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+* {box-sizing: border-box;}
+
+form.example input[type=text], form.search input[type=text] {
+	padding: 7.6px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 80%;
+	background: #f1f1f1;
+}
+
+form.example button, form.search button {
+	float: left;
+	width: 1.5cm;
+	height: 1.13cm;
+	padding: 2px;
+	background: #34495e;
+	color: white;
+	font-size: 12px;
+	border: 1px solid #34495e;
+	border-left: none;
+	cursor: pointer;
+}
+
+form.example button:hover, form.search button:hover {
+	background:  #007bb5;
+}
+
+form.example::after, form.search::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.fa-search {
+	margin-top: -0.1cm;
+	margin-left: -0cm;
+}
+form.search button {
+	width: 1.13cm;
+	height: 1.13cm;
+	margin-top: -1.12cm;
+	margin-left: 19.35cm;
+}
+form.search input[type=text] {
+	margin-left: 13cm;
+}
+.logo {
+	width: 10cm;
+	height: 6cm;
+	margin-left: -28cm;
+	margin-top: -2.4cm;
+}
+            

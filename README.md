@@ -1,10 +1,8 @@
-![Fantasy Flix Banner](https://github.com/supunxiii/supunxiii/blob/7653f59dcf38771e7791a1cc0795c9d6b4cdcd3c/user-interfaces/fantasy-flix/fantasy-flix-ui-1.png)
-
 ## Overview
 
 This is a website made for all-things movies and TV series, developed as part of the 4COSC011C - Web Design & Development course. Fantasy Flix is a comprehensive platform providing users with information about the latest releases, interactive quizzes, an image gallery, and an online store for entertainment merchandise.
 
-Designed and developed by Supun Seth XIII, Shuaib Feroze, Kishoritha Suthagar, and Thashi Maleesha in April 2021.
+Designed and developed by Supun Wijesooriya, Shuaib Feroze, Kishoritha Suthagar, and Thashi Maleesha in April 2021.
 
 ## Features
 
@@ -86,13 +84,13 @@ The Fantasy Flix website offers the following features:
 - **Compliance**: Adheres to JANET regulations regarding accessibility, legality, and acceptable use
 - **Development Year**: 2021
 
-## Screenshots
+## User Interfaces
 
-### Homepage
+### UIs
 
 ![Homepage Screenshot](https://github.com/supunxiii/supunxiii/blob/7653f59dcf38771e7791a1cc0795c9d6b4cdcd3c/user-interfaces/fantasy-flix/fantasy-flix-ui-1.png)
 
-### Content Sections
+### UIs
 
 ![Movies and TV Series Section](https://github.com/supunxiii/supunxiii/blob/7653f59dcf38771e7791a1cc0795c9d6b4cdcd3c/user-interfaces/fantasy-flix/fantasy-flix-ui-2.png)
 
@@ -158,7 +156,7 @@ fantasy-flix-website/
 
 This project was collaboratively developed in **April 2021** by:
 
-- **Supun Seth XIII** - Lead Developer (developed Buy Products Page & Presentation Page)
+- **Supun Wijesooriya** - Developer (developed Buy Products Page & Presentation Page)
 - **Shuaib Feroze** - Developer
 - **Kishoritha Suthagar** - Developer
 - **Thashi Maleesha** - Developer
@@ -207,11 +205,9 @@ This entertainment website is open-source and is licensed under the [MIT License
 
 For any inquiries or feedback, please contact the development team:
 
-- **Supun Seth XIII**: [GitHub Profile](https://github.com/supunxiii)
+- **Supun Wijesooriya**: [GitHub Profile](https://github.com/supunxiii)
 - **Project Repository**: [fantasy-flix-website](https://github.com/supunxiii/fantasy-flix-website)
 
 ---
-
-**Copyright © 2021 Fantasy*Flix***
 
 _Designed and developed in April 2021_

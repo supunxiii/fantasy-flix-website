@@ -4,6 +4,13 @@ This is a website made for all-things movies and TV series, developed as part of
 
 Designed and developed by Supun Wijesooriya, Shuaib Feroze, Kishoritha Suthagar, and Thashi Maleesha in April 2021.
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript (ES5+)](https://img.shields.io/badge/JavaScript-ES5%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=000000)
+![Font Awesome 4.7.0](https://img.shields.io/badge/Font%20Awesome-4.7.0-528DD7?style=flat-square&logo=fontawesome&logoColor=white)
+![W3.CSS 4](https://img.shields.io/badge/W3.CSS-4-04AA6D?style=flat-square&logo=w3c&logoColor=white)
+![CDN Resources](https://img.shields.io/badge/CDN-Resources-6C757D?style=flat-square&logo=cloudflare&logoColor=white)
+
 ## Features
 
 The Fantasy Flix website offers the following features:
@@ -12,7 +19,7 @@ The Fantasy Flix website offers the following features:
 
    - Dynamic image carousel showcasing featured movies and TV series
    - Quick access to trending movies and popular TV series
-   - Categorized content display with movies and TV series sections
+   - Categorised content display with movies and TV series sections
    - Newsletter subscription functionality
 
 2. **Movies Section**
@@ -193,7 +200,7 @@ Contributions to the Fantasy Flix website are welcome! If you would like to cont
 
 ## Important Notes
 
-- This website is **not mobile responsive** and is optimized for desktop viewing only
+- This website is **not mobile responsive** and is optimised for desktop viewing only
 - The website was developed as an academic project and follows educational standards
 - All content is for demonstration and educational purposes
 

@@ -197,10 +197,6 @@ Contributions to the Fantasy Flix website are welcome! If you would like to cont
 - The website was developed as an academic project and follows educational standards
 - All content is for demonstration and educational purposes
 
-## License
-
-This entertainment website is open-source and is licensed under the [MIT License](LICENSE)
-
 ## Contact
 
 For any inquiries or feedback, please contact the development team:

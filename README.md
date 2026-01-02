@@ -206,7 +206,7 @@ Contributions to the Fantasy Flix website are welcome! If you would like to cont
 
 ## Contact
 
-For any inquiries or feedback, please contact the development team:
+For any inquiries or feedback, please contact the developer:
 
 - **Supun Wijesooriya**: [GitHub Profile](https://github.com/supunxiii)
 - **Project Repository**: [fantasy-flix-website](https://github.com/supunxiii/fantasy-flix-website)

@@ -161,7 +161,7 @@ fantasy-flix-website/
 
 ## Contributors
 
-This project was collaboratively developed in **April 2021** by:
+This project was collaboratively developed by:
 
 - **Supun Wijesooriya** - Developer (developed Buy Products Page & Presentation Page)
 - **Shuaib Feroze** - Developer
